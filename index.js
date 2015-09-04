@@ -28,6 +28,10 @@ function xunitJunit () {
       xml.testsuites.testsuite.forEach(function (testsuite) {
         var builder = new xml2js.Builder()
 
+        testsuite.properties = ''
+        testsuite['system-out'] = ''
+        testsuite['system-err'] = ''
+
         var file = new File({
           cwd: '/',
           base: '/',

@@ -3,4 +3,7 @@
   <testcase name="#1 request matches"/>
   <testcase name="#2 no error"/>
   <testcase name="#3 response matches"/>
+  <properties/>
+  <system-out/>
+  <system-err/>
 </testsuite>
