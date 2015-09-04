@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuite name="can issue a request" tests="3" failures="0" errors="0">
+  <testcase name="#1 request matches"/>
+  <testcase name="#2 no error"/>
+  <testcase name="#3 response matches"/>
+</testsuite>

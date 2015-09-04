@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="can issue a request" tests="3" failures="0" errors="0">
+    <testcase name="#1 request matches"/>
+    <testcase name="#2 no error"/>
+    <testcase name="#3 response matches"/>
+  </testsuite>
+  <testsuite name="can pass through an object" tests="3" failures="0" errors="0">
+    <testcase name="#4 request matches"/>
+    <testcase name="#5 no error"/>
+    <testcase name="#6 response matches"/>
+  </testsuite>
+  <testsuite name="can pass from receiver to sender an object readable stream" tests="3" failures="0" errors="0">
+    <testcase name="#7 no error"/>
+    <testcase name="#8 no error"/>
+    <testcase name="#9 is passed through correctly"/>
+  </testsuite>
+  <testsuite name="can pass from receiver to sender a writable stream" tests="2" failures="0" errors="0">
+    <testcase name="#10 no error"/>
+    <testcase name="#11 msg match"/>
+  </testsuite>
+  <testsuite name="can pass from receiver to sender a transform stream as a writable" tests="2" failures="0" errors="0">
+    <testcase name="#12 no error"/>
+    <testcase name="#13 msg match"/>
+  </testsuite>
+  <testsuite name="can pass from receiver to sender a transform stream as a readable streams" tests="3" failures="0" errors="0">
+    <testcase name="#14 no error"/>
+    <testcase name="#15 no error"/>
+    <testcase name="#16 is passed through correctly"/>
+  </testsuite>
+  <testsuite name="can pass from sender to receiver an object readable stream" tests="3" failures="0" errors="0">
+    <testcase name="#17 no error"/>
+    <testcase name="#18 is passed through correctly"/>
+    <testcase name="#19 no error"/>
+  </testsuite>
+  <testsuite name="can pass from sender to receiver an object writable stream" tests="2" failures="0" errors="0">
+    <testcase name="#20 chunk match"/>
+    <testcase name="#21 no error"/>
+  </testsuite>
+  <testsuite name="supports custom encodings" tests="3" failures="0" errors="0">
+    <testcase name="#22 no error"/>
+    <testcase name="#23 no error"/>
+    <testcase name="#24 is passed through correctly"/>
+  </testsuite>
+</testsuites>
