@@ -1,7 +1,10 @@
 {
   "name": "xunit-junit",
   "version": "0.0.1",
-  "description": "Split a single xunit thing into multiple junit thing",
+  "description": "Split a single xunit thing into multiple junit files",
+  "bin": {
+    "xunit-junit": "index.js"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "standard",
