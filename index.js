@@ -31,7 +31,7 @@ function xunitJunit () {
         var file = new File({
           cwd: '/',
           base: '/',
-          path: '/' + testsuite.$.name.replace(/ /g, '-') + '.xml',
+          path: '/' + testsuite.$.name.replace(/[ \/]+/g, '-') + '.xml',
           contents: new Buffer(builder.buildObject({
             testsuite: testsuite
           }) + '\n')

@@ -42,4 +42,9 @@
     <testcase name="#23 no error"/>
     <testcase name="#24 is passed through correctly"/>
   </testsuite>
+  <testsuite name="a test / with a slash" tests="3" failures="0" errors="0">
+    <testcase name="#22 no error"/>
+    <testcase name="#23 no error"/>
+    <testcase name="#24 is passed through correctly"/>
+  </testsuite>
 </testsuites>

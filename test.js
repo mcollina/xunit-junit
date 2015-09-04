@@ -29,7 +29,8 @@ test('convert xunit into a multiple dir structure', function (t) {
           'can-pass-from-receiver-to-sender-a-transform-stream-as-a-readable-streams.xml',
           'can-pass-from-sender-to-receiver-an-object-readable-stream.xml',
           'can-pass-from-sender-to-receiver-an-object-writable-stream.xml',
-          'supports-custom-encodings.xml'
+          'supports-custom-encodings.xml',
+          'a-test-with-a-slash.xml'
         ].sort(), files, 'files matches')
 
         var file = fs.readFileSync(path.join(dir.name, 'can-issue-a-request.xml'), 'utf8')
