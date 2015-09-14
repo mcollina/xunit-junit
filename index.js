@@ -28,7 +28,13 @@ function xunitJunit () {
       xml.testsuites.testsuite.forEach(function (testsuite) {
         var builder = new xml2js.Builder()
 
+        // extremly dirty hack to change the ordering
+        // of elements in the resulting XML
+        var testcase = testsuite.testcase
         testsuite.properties = ''
+        delete testsuite.testcase
+        testsuite.testcase = testcase
+
         testsuite['system-out'] = ''
         testsuite['system-err'] = ''
         testsuite.$.time = '0'
