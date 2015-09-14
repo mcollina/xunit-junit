@@ -31,6 +31,11 @@ function xunitJunit () {
         testsuite.properties = ''
         testsuite['system-out'] = ''
         testsuite['system-err'] = ''
+        testsuite.$.time = '0'
+
+        testsuite.testcase.forEach(function (testcase) {
+          testcase.$.time = '0'
+        })
 
         var file = new File({
           cwd: '/',
