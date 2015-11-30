@@ -39,20 +39,22 @@ function xunitJunit () {
         testsuite['system-err'] = ''
         testsuite.$.time = '0'
 
-        testsuite.testcase.forEach(function (testcase) {
-          testcase.$.time = '0'
-        })
+        if (testsuite.testcase) {
+          testsuite.testcase.forEach(function (testcase) {
+            testcase.$.time = '0'
+          })
 
-        var file = new File({
-          cwd: '/',
-          base: '/',
-          path: '/' + testsuite.$.name.replace(/[ \/]+/g, '-') + '.xml',
-          contents: new Buffer(builder.buildObject({
-            testsuite: testsuite
-          }) + '\n')
-        })
+          var file = new File({
+            cwd: '/',
+            base: '/',
+            path: '/' + testsuite.$.name.replace(/[ \/]+/g, '-') + '.xml',
+            contents: new Buffer(builder.buildObject({
+              testsuite: testsuite
+            }) + '\n')
+          })
 
-        source.push(file)
+          source.push(file)
+        }
       })
 
       source.push(null)
