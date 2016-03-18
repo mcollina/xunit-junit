@@ -25,6 +25,11 @@ function xunitJunit () {
         return
       }
 
+      if (!xml.testsuites || !xml.testsuites.testsuite) {
+        source.push(null)
+        return
+      }
+
       xml.testsuites.testsuite.forEach(function (testsuite) {
         var builder = new xml2js.Builder()
 
